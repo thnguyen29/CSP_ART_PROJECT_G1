@@ -109,7 +109,7 @@ def fill_background(color_name):
     h = int(_canvas['height'])
     _canvas.create_rectangle(0, 0, w, h, fill=color_name, outline="")
 
-def draw_line(x1, y1, x2, y2):
+def draw_line(x1, y1, x2, y2, _line_thickness=1):
     """Draws a line connecting point (x1, y1) to point (x2, y2)."""
     _canvas.create_line(x1, y1, x2, y2, fill=_outline_color, width=_line_thickness)
 
@@ -128,7 +128,7 @@ def fill_circle(center_x, center_y, radius):
     _canvas.create_oval(center_x - radius, center_y - radius, center_x + radius, center_y + radius, 
                         fill=_fill_color, outline=_outline_color, width=_line_thickness)
 
-def draw_circle(center_x, center_y, radius):
+def draw_circle(center_x, center_y, radius, _line_thickness):
     """Draws an empty circle outline given its center point and radius."""
     _canvas.create_oval(center_x - radius, center_y - radius, center_x + radius, center_y + radius, 
                         fill="", outline=_outline_color, width=_line_thickness)
