@@ -32,6 +32,36 @@ def draw_picture(width, height):
     sg.draw_line(320,200,340,225, 8)
     sg.draw_line(320,200,340,175, 8)
     
+    #Right side of the court (sonny)
+    
+    
+    #Draw 3 point line
+    sg.set_line_thickness(2)
+    sg.set_outline_color("white")
+    sg.draw_line(500,40,600,40)
+    sg.draw_line(500,360,600,360)
+    sg.draw_curve( [(500,40), (300,200), (500,360)] )
+    
+    
+    
+    #inner paint
+    sg.set_fill_color("#DC8535")
+    sg.fill_rectangle(460, 160, 200, 80)
+    
+    
+    #Outer pain
+    sg.draw_line(460,140,460,260)
+    sg.draw_line(460,140,600,140)
+    sg.draw_line(460,260,600,260)
+    
+    #freethrow circle
+    sg.draw_circle(460, 200, 40, 2)
+    
+    #hoop and backboard
+    sg.draw_circle(575,200,5,1)
+    sg.draw_line(580,180,580,220)
+    
+    # Mario's code (Left side of the court)
     # draw upper left 3pt corner line
     sg.set_line_thickness(2)
     sg.set_outline_color("white")
