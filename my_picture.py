@@ -59,7 +59,7 @@ def draw_picture(width, height):
     sg.draw_circle(460, 200, 40, 2)
     
     #hoop and backboard
-    sg.draw_circle(575,200,5,2)
+    sg.draw_circle(575,200,5,1)
     sg.draw_line(580,180,580,220)
     
     
