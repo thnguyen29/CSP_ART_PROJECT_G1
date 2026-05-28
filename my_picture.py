@@ -80,7 +80,7 @@ def draw_picture(width, height):
     
     #Basketball hoop
     sg.draw_line (20,180,20,220,1)
-    sg.draw_circle (25,200,5,2)
+    sg.draw_circle (25,200,5,)
     
 if __name__ == "__main__":
     # Launch the wrapper; only edit starting dimensions of canvas if you would like to
