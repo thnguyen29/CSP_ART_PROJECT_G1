@@ -2,6 +2,8 @@ import simple_graphics as sg
 
 def draw_picture(width, height):
     """Draws a static picture."""
+
+    # Bill's code (Added center logo, halfcourt line, and background
     
     # Fill the background
     sg.fill_background("#F1CC84")
@@ -34,7 +36,6 @@ def draw_picture(width, height):
     
     #Right side of the court (sonny)
     
-    
     #Draw 3 point line
     sg.set_line_thickness(2)
     sg.set_outline_color("white")
@@ -42,14 +43,11 @@ def draw_picture(width, height):
     sg.draw_line(500,360,600,360)
     sg.draw_curve( [(500,40), (300,200), (500,360)] )
     
-    
-    
     #inner paint
     sg.set_fill_color("#DC8535")
     sg.fill_rectangle(460, 160, 200, 80)
     
-    
-    #Outer pain
+    #Outer paint
     sg.draw_line(460,140,460,260)
     sg.draw_line(460,140,600,140)
     sg.draw_line(460,260,600,260)
@@ -66,27 +64,24 @@ def draw_picture(width, height):
     sg.set_line_thickness(2)
     sg.set_outline_color("white")
     
-    ##Three point line
+    #Three point line
     sg.draw_line (0,40,100,40,2)
     sg.draw_line (0,360,100,360,2)
     sg.draw_curve([(100,40),(300,200),(100,360)])
     
-    ##The paint
-    sg.set_fill_color("#DC8535")
+    # Inner Paint
+    sg.set_fill_color("#DC8535") # Color Knicks Orange
     sg.fill_rectangle (0,160,140,80)
     
-    ##Basketball hoop
-    sg.draw_line (20,180,20,220,1)
-    sg.draw_circle (25,200,5,2)
-    
-        ##Free throw line
+    # Outer Paint
     sg.draw_rectangle (0,140,140,120)
+    # Free Throw Circle
     sg.draw_circle (140,200,40,2)
     
+    #Basketball hoop
+    sg.draw_line (20,180,20,220,1)
+    sg.draw_circle (25,200,5,1)
     
-    
-    
-
 if __name__ == "__main__":
     # Launch the wrapper; only edit starting dimensions of canvas if you would like to
     sg.start(draw_picture, 600, 400)
