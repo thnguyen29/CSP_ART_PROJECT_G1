@@ -215,3 +215,32 @@ def draw_leftinsidethree():
     #Basketball hoop
     draw_line (20,180,20,220,1)
     draw_circle (25,200,5,1)
+# Bill's Code
+def knicks_logo():
+# draw circle for logo
+    set_line_thickness(10)
+    set_fill_color("#DC8535")
+    set_outline_color("#34569B")
+    fill_circle(300, 200, 60)
+
+    # Draw Y
+    set_outline_color("black")
+    draw_line(300,250,300,195, 8)
+    draw_line(270,160,300,200, 8)
+    draw_line(330,160,300,200, 8)
+
+    # Draw N
+    draw_line(260,175,260,225, 8)
+    draw_line(260,180,280,220, 8)
+    draw_line(280,175,280,225, 8)
+
+    # Draw K
+    draw_line(320,175,320,225, 8)
+    draw_line(320,200,340,175, 8)
+    draw_line(320,200,340,225, 8)
+
+
+def half_court_line():
+    # Halfcourt line
+    set_outline_color("white")
+    draw_line(300,0,300,400, 2)
