@@ -38,10 +38,10 @@ def draw_picture(width, height):
     
     #Sonny's changes function
     #Draw 3 point line
-    sg.three_point_line("white")
+    sg.right_three_point_line("white")
     
     #Paint
-    sg.paint()
+    sg.right_paint()
     #freethrow circle
     sg.draw_circle(460, 200, 40, 2)
     
