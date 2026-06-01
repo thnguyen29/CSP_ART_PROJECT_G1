@@ -197,3 +197,21 @@ def right_paint():
     draw_line(460,140,460,260)
     draw_line(460,140,600,140)
     draw_line(460,260,600,260)
+    
+#Three point line
+def draw_leftthreeline():
+    draw_line (0,40,100,40,2)
+    draw_line (0,360,100,360,2)
+    draw_curve([(100,40),(300,200),(100,360)])
+def draw_leftinsidethree():
+    # Inner Paint
+    set_fill_color("#DC8535") # Color Knicks Orange
+    fill_rectangle (0,160,140,80)
+    # Outer Paint
+    draw_rectangle (0,140,140,120)
+    # Free Throw Circle
+    draw_circle (140,200,40,2)
+    
+    #Basketball hoop
+    draw_line (20,180,20,220,1)
+    draw_circle (25,200,5,1)
