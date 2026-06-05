@@ -182,3 +182,65 @@ def draw_text(x, y, text_string, font_size=16):
     """Draws text on the screen with the top-left corner at (x, y)."""
     _canvas.create_text(x, y, text=text_string, fill=_fill_color, 
                         anchor="nw", font=("Arial", font_size))
+
+def right_three_point_line(color):
+    set_line_thickness(2)
+    set_outline_color("white")
+    draw_line(500,40,600,40)
+    draw_line(500,360,600,360)
+    draw_curve( [(500,40), (300,200), (500,360)] )
+def right_paint():
+    #Inner paint
+    set_fill_color("#DC8535")
+    fill_rectangle(460, 160, 200, 80)
+    #Outer paint
+    draw_line(460,140,460,260)
+    draw_line(460,140,600,140)
+    draw_line(460,260,600,260)
+    
+#Three point line
+def draw_leftthreeline():
+    draw_line (0,40,100,40,2)
+    draw_line (0,360,100,360,2)
+    draw_curve([(100,40),(300,200),(100,360)])
+def draw_leftinsidethree():
+    # Inner Paint
+    set_fill_color("#DC8535") # Color Knicks Orange
+    fill_rectangle (0,160,140,80)
+    # Outer Paint
+    draw_rectangle (0,140,140,120)
+    # Free Throw Circle
+    draw_circle (140,200,40,2)
+    
+    #Basketball hoop
+    draw_line (20,180,20,220,1)
+    draw_circle (25,200,5,1)
+# Bill's Code
+def knicks_logo():
+# draw circle for logo
+    set_line_thickness(10)
+    set_fill_color("#DC8535")
+    set_outline_color("#34569B")
+    fill_circle(300, 200, 60)
+
+    # Draw Y
+    set_outline_color("black")
+    draw_line(300,250,300,195, 8)
+    draw_line(270,160,300,200, 8)
+    draw_line(330,160,300,200, 8)
+
+    # Draw N
+    draw_line(260,175,260,225, 8)
+    draw_line(260,180,280,220, 8)
+    draw_line(280,175,280,225, 8)
+
+    # Draw K
+    draw_line(320,175,320,225, 8)
+    draw_line(320,200,340,175, 8)
+    draw_line(320,200,340,225, 8)
+
+
+def half_court_line():
+    # Halfcourt line
+    set_outline_color("white")
+    draw_line(300,0,300,400, 2)
